@@ -23,16 +23,12 @@ for i in range(3):
     print(matrix[i])
 
 
-# Assigning elements for easier calculation
-
 a = matrix[0][0]
 b = matrix[0][1]
 c = matrix[0][2]
-
 d = matrix[1][0]
 e = matrix[1][1]
 f = matrix[1][2]
-
 g = matrix[2][0]
 h = matrix[2][1]
 i = matrix[2][2]
@@ -69,7 +65,6 @@ determinant = (
 coefficient_constant = -determinant
 
 
-# Displaying eigen equation
 
 print("\nCharacteristic Equation:")
 
@@ -84,8 +79,7 @@ print(
 )
 
 
-# Function to calculate the value of the characteristic equation
-# for a particular lambda
+# Function to calculate the value of the characteristic equation for a particular lambda
 
 def equation(x):
     return (
@@ -95,8 +89,7 @@ def equation(x):
         coefficient_constant
     )
 
-
-# Finding approximate range for eigenvalues
+#approx
 
 maximum = max(
     abs(a), abs(b), abs(c),
@@ -154,9 +147,6 @@ while left <= limit and len(eigenvalues) < 3:
 
     left = right
     previous_value = current_value
-
-
-# Display eigenvalues
 
 print("\nEigenvalues:")
 
